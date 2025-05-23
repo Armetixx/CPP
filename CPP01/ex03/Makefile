@@ -3,20 +3,20 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: Rigby <Rigby@student.42.fr>                +#+  +:+       +#+         #
+#    By: armetix <armetix@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/01/31 10:58:27 by kederhet          #+#    #+#              #
-#    Updated: 2024/11/21 17:39:55 by Rigby            ###   ########.fr        #
+#    Created: 2025/04/14 12:08:39 by armetix           #+#    #+#              #
+#    Updated: 2025/04/21 14:42:16 by armetix          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = weapon
 CPP = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 ECHO = echo
 
-SOURCE =	megaphone
+SOURCE =	main HumanA HumanB Weapon
 
 SRCS = $(addsuffix .cpp, $(SOURCE))
 OBJS = $(addsuffix .o, $(SOURCE))
