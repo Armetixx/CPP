@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kederhet <kederhet@student.s19.be>         +#+  +:+       +#+        */
+/*   By: kderhet <kderhet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 17:02:49 by kederhet          #+#    #+#             */
-/*   Updated: 2025/09/30 12:47:31 by kederhet         ###   ########.fr       */
+/*   Updated: 2025/11/05 14:01:38 by kderhet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string>
 # include <iostream>
 
+class Form;
 class Bureaucrat
 {
 private:
@@ -31,6 +32,7 @@ public:
 	int getGrade() const;
 	void incrementGrade();
 	void decrementGrade();
+    void signForm(Form &form);
 	class GradeTooHighException : public std::exception
 	{
 	public:

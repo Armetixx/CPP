@@ -6,17 +6,22 @@
 #    By: kderhet <kderhet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/21 00:19:45 by kderhet           #+#    #+#              #
-#    Updated: 2025/11/05 14:02:37 by kderhet          ###   ########.fr        #
+#    Updated: 2025/11/06 01:29:10 by kderhet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = form
+NAME = form2
 CPP = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 ECHO = echo
 
-SOURCE =	main Bureaucrat Form
+SOURCE =	main \
+			AForm \
+			Bureaucrat \
+			ShrubberyCreationForm \
+			RobotomyRequestForm \
+			PresidentialPardonForm
 
 SRCS = $(addsuffix .cpp, $(SOURCE))
 OBJS = $(addsuffix .o, $(SOURCE))
